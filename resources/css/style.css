@@ -21,6 +21,8 @@ body {
   #featured,
   #locations {
     max-width: 100%;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -126,12 +128,13 @@ a {
 @media only screen and (max-width: 1060px){
   #locations {
     height: auto;
-    background-position: center;
-    background-size: cover;
   }
   .container.locations {
     flex-wrap: wrap;
     flex-grow: 1;
+  }
+  .locations p {
+    font-size: 1rem;
   }
 }
 
@@ -146,4 +149,11 @@ a {
 .copyright {
   text-align: left;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 1060px){
+  .copyright {
+    text-align: center;
+    margin-left: 0;
+  }
 }
